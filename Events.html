@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Book4Book</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900|Display+Playfair:200,300,400,700"> 
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css-ch/bootstrap.min.css">
+    <link rel="stylesheet" href="css-ch/magnific-popup.css">
+    <link rel="stylesheet" href="css-ch/jquery-ui.css">
+    <link rel="stylesheet" href="css-ch/owl.carousel.min.css">
+    <link rel="stylesheet" href="css-ch/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="css-ch/bootstrap-datepicker.css">
+
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
+
+
+    <link rel="stylesheet" href="css-ch/aos.css">
+
+    <link rel="stylesheet" href="css-ch/style.css">
+    <!-- calendar CSS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="./calendarStyle.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script>
+      function myFunction() {
+        alert("Inserted Successfully");
+      }
+      function myFunctionEdit() {
+        alert("Edited Successfully");
+      }
+      </script>
+  
+  </head>
+  <body>
+  
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+    <header class="site-navbar py-1" role="banner">
+
+      <div class="container">
+        <div class="row align-items-center">
+          
+          <div class="col-6 col-xl-2">
+            <h1 class="mb-0"><a href="index.html" class="text-black h2 mb-0">BOOK4BOOK</a></h1>
+          </div>
+          <div class="col-10 col-md-8 d-none d-xl-block">
+            <nav class="site-navigation position-relative text-right text-lg-center" role="navigation">
+
+              <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
+                <li>
+                  <a href="News.html">News</a>
+                </li>
+                <!-- <li>
+                  <a href="Book request.html">Book request</a>
+                </li> -->
+                <!-- <li><a href="Book offer.html">Book offer</a></li> -->
+                <li class="active"><a href="Events.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <!-- <li><a href="booking.html">Book Online</a></li> -->
+                <li><a href="Groups.html">Groups</a></li>
+               
+                
+                
+              </ul>
+            </nav>
+          </div>
+
+          <div class="col-6 col-xl-2 text-right">
+            <div class="d-none d-xl-inline-block">
+              <ul class="site-menu js-clone-nav ml-auto list-unstyled d-flex text-right mb-0" data-class="social">
+                <li>
+                  <a href="#" class="pl-0 pr-3 text-black"><span class="icon-tripadvisor"></span></a>
+                </li>
+                <li>
+                  <a href="#" class="pl-3 pr-3 text-black"><span class="icon-twitter"></span></a>
+                </li>
+                <li>
+                  <a href="#" class="pl-3 pr-3 text-black"><span class="icon-facebook"></span></a>
+                </li>
+                <li>
+                  <a href="#" class="pl-3 pr-3 text-black"><span class="icon-instagram"></span></a>
+                </li>
+                
+              </ul>
+            </div>
+
+            <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+
+          </div>
+
+        </div>
+      </div>
+      
+    </header>
+
+  
+
+   
+
+    <div class="site-blocks-cover inner-page-cover" style="background-image: url(images/tiny1.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+        <div class="container">
+          <div class="row align-items-center justify-content-center text-center">
+
+            <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
+              <h1 class="text-white font-weight-light">Book your events</h1>
+              <div><a href="index.html">Home</a> <span class="mx-2 text-white">&bullet;</span> <span class="text-white">Events</span></div>
+              
+            </div>
+          </div>
+        </div>
+      </div>  
+<!-- calendar view starts -->
+     <!-- partial:index.partial.html -->
+<div class="site-header autocomplete">
+  <div class="input-wrapper">
+    <input type="text" placeholder="Search" class="search-field">
+      <span class="close">Cancel</span>
+
+    <div class="focus-background"></div>
+  </div>
+   <div class="dialog">   
+  </div>
+  
+</div>
+
+  
+<div id='calendar'></div>
+
+<div id="calendar-popup">
+ 
+  <form id="event-form">
+     <div class='calander_popip_title'><i class="fa fa-calendar" aria-hidden="true"></i>
+Add Event</div>
+    <ul>
+      <li>
+        <label for="event-start"><i class="fa fa-bell-o" aria-hidden="true"></i>
+
+From</label>
+        <input id="event-start"  class='form-control' type="datetime-local" name="start" />
+      </li>
+      <li>
+        <label for="event-end"><i class="fa fa-bell-slash" aria-hidden="true"></i>
+
+To</label>
+        <input id="event-end"  class='form-control' type="datetime-local" name="end" />
+      </li>
+      <li>
+        <label for="event-title"><i class="fa fa-calendar-minus-o" aria-hidden="true"></i>
+Event Name</label>
+        <input id="event-title"  class='form-control' type="text" name="title" />
+      </li>
+      <li>
+        <label for="event-location"><i class="fa fa-map-marker" aria-hidden="true"></i>
+Location</label>
+        <input id="event-location"   class='form-control' type="text" name="location" />
+      </li>
+      <li>
+        <label for="event-details"><i class="fa fa-info-circle" aria-hidden="true"></i>
+Description</label>
+        <textarea id="event-details"  class='form-control' name="details"></textarea>
+      </li>
+      <div class="button">
+        <input type="submit" onclick="myFunction()"  class='form-control submit_btn'/>
+      </div>
+    </ul>
+  </form>
+  
+  <div id="event">
+    <header></header>
+    <ul>
+    <li class="start-time"> 
+      <p>
+  Start at</p>
+        <time></time>
+      </li>
+       <li class="end-time">
+      <p>
+ End</p>
+        <time></time>
+      </li>
+      <li>
+        <p>
+          <i class="fa fa-map-marker" aria-hidden="true"></i>Location</p>
+<p class="location"></p>
+      </li>
+      <li>
+        <p><i class="fa fa-info" aria-hidden="true"></i>
+Details:</p>
+        <p class="details"></p>
+      </li>
+    </ul>
+   
+  </div>
+
+  <div class="prong">
+    <div class="bottom-prong-dk"></div>
+    <div class="bottom-prong-lt"></div>
+  </div>
+</div>
+
+
+<div class='modle' id='simplemodal'>
+  <div class='modle-continer'>
+      <form id="edit-form">
+
+    <div class='modal-header'>
+        <span class='close-btn' id='close-btnid'>&times</span>
+      <h2>Edit Event</h2>
+    </div>
+   <div class='modal-body'>
+  
+     <lable for='eventname'>Event Name</lable>
+     <input type='text' name='eventname' id='eventname' class='form-control' >
+     <lable for='location'>Location</lable>
+     <input type='text' name='location' id='location' class='form-control' >
+     
+     <label for="event-start">From</label><input id="eventstart" type="datetime-local" name="start" class='form-control'/>
+     
+     <label for="event-end">To</label>
+        <input id="eventend" type="datetime-local" name="end" class='form-control'/>
+      <label for="event-details">Details</label>
+     <textarea id="eventdetails" type='text' name="details"  class='form-control'></textarea>
+    
+    </div>
+    <div class='modal-footer'>
+      <button type='submit' onclick="myFunctionEdit()" class='btn btn-info'>save</button>
+      <button class='btn btn-dafault'>cancel</button>
+      
+    </div>
+    </form>
+  </div>
+  
+</div>
+
+<div id='search_result'>result</div>
+<button class='btn btn-primary'>Add Events</button>
+<br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br>
+
+<!-- partial -->
+
+    
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="mb-5">
+          <h3 class="footer-heading mb-4">About Books</h3>
+          <p>A book is a medium for recording information in the form of writing or images, typically composed of many pages bound together and protected by a cover.</p>
+        </div>
+
+        
+        
+      </div>
+      <div class="col-lg-4 mb-5 mb-lg-0">
+        <div class="row mb-5">
+          <div class="col-md-12">
+            <h3 class="footer-heading mb-4">Navigations</h3>
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <ul class="list-unstyled">
+              <li><a href="#">News</a></li>
+              <li><a href="#">Book Offers</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Members</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <ul class="list-unstyled">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+
+        
+
+      </div>
+
+      <div class="col-lg-4 mb-5 mb-lg-0">
+       
+
+        <div class="mb-5">
+          <h3 class="footer-heading mb-2">Subscribe Newsletter</h3>
+          <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit minima minus odio.</p> -->
+
+          <form action="#" method="post">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control border-secondary text-white bg-transparent" placeholder="Enter Email" aria-label="Enter Email" aria-describedby="button-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-primary text-white" type="button" id="button-addon2">Send</button>
+              </div>
+            </div>
+          </form>
+
+        </div>
+
+      </div>
+      
+    </div>
+    <div class="row pt-5 mt-5 text-center">
+      <div class="col-md-12">
+        <div class="mb-5">
+          <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
+          <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
+          <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+          <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
+        </div>
+
+        <p>
+        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >WE-38</a>
+        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        </p>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+  </div>
+
+  <script src="js-ch/jquery-3.3.1.min.js"></script>
+  <script src="js-ch/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js-ch/jquery-ui.js"></script>
+  <script src="js-ch/popper.min.js"></script>
+  <script src="js-ch/bootstrap.min.js"></script>
+  <script src="js-ch/owl.carousel.min.js"></script>
+  <script src="js-ch/jquery.stellar.min.js"></script>
+  <script src="js-ch/jquery.countdown.min.js"></script>
+  <script src="js-ch/jquery.magnific-popup.min.js"></script>
+  <script src="js-ch/bootstrap-datepicker.min.js"></script>
+  <script src="js-ch/aos.js"></script>
+
+  <script src="js-ch/main.js"></script>
+
+  <!-- calendar Scripts -->
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.0/moment.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.2.0/fullcalendar.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script><script  src="./script.js"></script>
+  
+    
+  </body>
+</html>
